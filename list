@@ -1,0 +1,18 @@
+list = []
+for _ in range(int(input())):
+    list1 = input().strip().split(" ")
+    list2 = list1[0]
+    if(list2 =="print"):
+        print(list)
+    elif(list2 =="sort"):
+        list.sort()
+    elif(list2 =="pop"):
+        list.pop()
+    elif(list2 == "reverse"):
+        list.reverse()
+    elif(list2 == "remove"):
+        list.remove(int(list1[1]))
+    elif(list2 == "append"):
+        list.append(int(list1[1]))
+    elif(list2 == "insert"):
+        list.insert(int(list1[1]))
