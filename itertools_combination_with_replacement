@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import itertools
+a,s = input().split()
+for i in itertools.combinations_with_replacement(sorted(a),int(s)):
+    print(''.join(i))
