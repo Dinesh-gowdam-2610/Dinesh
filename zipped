@@ -1,0 +1,6 @@
+a,b = map(int,input().split())
+sheet = []
+for _ in range(b):
+    sheet.append(map(float,input().split()))
+for b in zip(*sheet):
+    print(sum(b)/len(b))
