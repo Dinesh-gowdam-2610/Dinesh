@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+m1 = int(input())
+m2 = set(map(int,input().split()))
+n1 = int(input())
+n2 = set(map(int,input().split()))
+args = (m2.difference(n2)).union(n2.difference(m2))
+for i in sorted(args):
+    print(i)
