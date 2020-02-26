@@ -1,0 +1,16 @@
+import collections
+n= int(input())
+d = collections.deque()
+for i in range(n):
+    a = list(input().strip().split())
+    b = a[0]
+    if b == 'pop':
+        d.pop()
+    elif b == 'popleft':
+        d.popleft()
+    elif b == 'append':
+        d.append(int(a[1]))
+    elif b == 'appendleft':
+        d.appendleft(int(a[1]))
+for i in d:
+    print(" ",i)
