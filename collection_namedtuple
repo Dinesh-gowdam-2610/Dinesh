@@ -1,0 +1,9 @@
+#from collection import namedtuple
+n = int(input())
+col = list(input().split())
+marks = col.index("MARKS")
+mark_list = []
+for i in range(n):
+    info = list(input().split())
+    mark_list.append(int(info[marks]))
+print(sum(mark_list)/n)
