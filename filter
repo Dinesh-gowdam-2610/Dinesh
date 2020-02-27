@@ -1,0 +1,7 @@
+a_score =[12,34,78,67,55,66,87,97,45,90]
+def score(a_score):
+  return a_score < 60
+  
+over_75 = list(filter(score,a_score))
+print(pver_75)
+  
