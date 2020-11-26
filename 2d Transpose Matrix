@@ -1,0 +1,6 @@
+import numpy as np
+
+def func(insert_matrix):
+	my_matrix = np.array(my_matrix)
+	my_matrix = my_matrix.transpose()
+  return insert_matrix
